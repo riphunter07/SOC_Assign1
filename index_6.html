@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Assignment
+        </title>
+        <style>
+        div{ height: 300px;
+            resize: both;
+           overflow: auto;
+           width: 300px;
+        }
+        
+        
+        </style>
+
+    </head>
+    <body>
+        <center>
+            <h1> My First subwindow</h1>
+            <input id="i1" type="text">
+<input type="button" value="GO" onclick="fn()"><br>
+<div > 
+<iframe  id="if" src="" height="100%", width="100%"></iframe>
+</div>
+<script>
+function fn(){
+var x=document.getElementById("i1").value;
+
+var v=document.getElementById("if");
+v.setAttribute("src",x);
+
+
+}
+
+
+
+</script>
+</center>
+    </body>
+</html>

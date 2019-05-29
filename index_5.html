@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            Assignment
+        </title>
+        
+
+    </head>
+    <body>
+            <center>
+                    <h1> My First subwindow</h1>
+    enter URL<input id="i1" type="text">
+<br>
+
+enter height<input  id="i2" type="text">
+<br>
+enter width<input id="i3" type="text"><br>
+<input type="button" value="GO" onclick="fn()"><br>
+<iframe id="if"></iframe>
+<script>
+    
+function fn(){
+   
+    
+
+var x=document.getElementById("i1").value;
+var y=document.getElementById("i2").value;
+var z=document.getElementById("i3").value;
+
+var v=document.getElementById("if");
+v.setAttribute("src",x);
+
+
+v.setAttribute("height",y+"px");
+v.setAttribute("width",z+"px");
+
+
+document.body.appendChild(v);
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</center>
+    </body>
+</html>
+        

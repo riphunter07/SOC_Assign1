@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Assignment
+        </title>
+        
+
+    </head>
+    <body>
+        <center>
+            <h1> My First subwindow</h1>
+            <input  type="button" onclick="ipl()" value="ipl">
+            <input  type="button" onclick="wiki()" value="wikipedia">
+            <input  type="button" onclick="hbo()" value="hbo">
+           <br><br> 
+            <iframe id="if1" src="" height="90%" width="90%"></iframe>
+    
+          
+           
+       
+        <script>
+        function ipl(){
+         document.getElementById("if1").setAttribute("src","https://www.iplt20.com/"); 
+        }
+        function wiki(){
+         document.getElementById("if1").setAttribute("src","https://www.wikipedia.org/"); 
+        }
+        function hbo(){
+         document.getElementById("if1").setAttribute("src","https://www.hbo.com/"); 
+        }
+        
+        
+        
+        </script>
+
+        </center>
+    </body>
+</html>
